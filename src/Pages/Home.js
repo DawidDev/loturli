@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-// Import home page components to display
+// Import additional components to display
+import TitleSection from "../Components/TitleSection"
 import Incentive from "../Components/Incentive";
 import Search from "../Components/Search";
 import GuideBar from "../Components/GuideBar";
+import Recommended from "../Components/Recommended";
 
 const HomeContainer = styled.div`
   //border: 1px solid red;
@@ -24,8 +26,11 @@ const Home = () => {
     <>
     <Search />
     <HomeContainer>
+      <TitleSection title={'Biuro podróży Loturli'} />
       <Incentive />
       <GuideBar />
+      <TitleSection title={'Loturli poleca'} />
+      <Recommended />
     </HomeContainer>
     </>
    

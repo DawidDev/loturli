@@ -2,9 +2,6 @@ import React from "react";
 
 import styled from "styled-components";
 
-// Import additional components to display
-import TitleSection from "./TitleSection";
-
 const IncentiveContainer = styled.div`
   width: 100%;
   display: flex;
@@ -43,7 +40,6 @@ const IncentiveContainer = styled.div`
 const Incentive = () => {
   return (
     <>
-    <TitleSection title={'Biuro podróży Loturli'}/>
       <IncentiveContainer>
         <div className="discounts"></div>
         <div className="last_minute"></div>
