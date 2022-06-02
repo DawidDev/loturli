@@ -4,6 +4,7 @@ import styled from "styled-components";
 // Import home page components to display
 import Incentive from "../Components/Incentive";
 import Search from "../Components/Search";
+import GuideBar from "../Components/GuideBar";
 
 const HomeContainer = styled.div`
   //border: 1px solid red;
@@ -24,6 +25,7 @@ const Home = () => {
     <Search />
     <HomeContainer>
       <Incentive />
+      <GuideBar />
     </HomeContainer>
     </>
    

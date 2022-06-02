@@ -11,3 +11,7 @@
    overflow: auto;
    font-family: 'Kanit', sans-serif;
  }
+
+ button:hover {
+   cursor: pointer;
+ }

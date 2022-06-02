@@ -35,7 +35,7 @@ const IncentiveContainer = styled.div`
     .last_minute {
       width: 100%;
       flex: none;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 `;
