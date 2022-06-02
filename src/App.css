@@ -8,8 +8,6 @@
  }
 
  body {
-   overflow: hidden;
+   overflow: auto;
    font-family: 'Kanit', sans-serif;
-   max-width: 1400px;
-   margin: 0 auto;
  }

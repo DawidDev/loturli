@@ -16,6 +16,8 @@ const NavigationStyled = styled.div`
   align-items: center;
   color: #515151;
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 
   .logo {
     font-size: 44px;
@@ -79,6 +81,7 @@ const NavigationStyled = styled.div`
     position: static;
     color: ${props => props.menuRWD ? '#fff' : 'black'};
     transition: 0.25s;
+ 
 
     .logo {
       width: auto;
@@ -91,7 +94,7 @@ const NavigationStyled = styled.div`
       top: 0;
       box-sizing: border-box;
       margin: 0;
-      position: absolute;
+      position: fixed;
       background-color: #426F74;
       width: 100%;
       height: 100%;

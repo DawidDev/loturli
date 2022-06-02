@@ -5,7 +5,7 @@ import styled from "styled-components";
 const TitleSectionContainer = styled.div`
   font-size: 1.5rem;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin: 10px;
   color: #3C3C3C;
 `;
 
