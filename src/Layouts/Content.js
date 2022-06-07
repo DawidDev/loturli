@@ -23,7 +23,7 @@ const Content = () => {
   return (
     <ContentContainer>
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/promotion" element={<Promotion />} />
         <Route path="/lastminute" element={<LastMinute />} />
