@@ -8,7 +8,7 @@ import Search from "../Components/Search";
 import GuideBar from "../Components/GuideBar";
 import Recommended from "../Components/Recommended";
 import PopularDestinations from "../Components/PopularDestinations";
-
+import BlogIncentive from "../Components/BlogIncentive";
 
 const HomeContainer = styled.div`
   //border: 1px solid red;
@@ -36,6 +36,10 @@ const Home = () => {
       <TitleSection title={'Popularne kierunki podróży'} />
     </HomeContainer>
     <PopularDestinations />
+    <HomeContainer>
+      <TitleSection title={'Sprawdź nasz blog'}></TitleSection>
+      <BlogIncentive />
+    </HomeContainer>
     </>
    
   );

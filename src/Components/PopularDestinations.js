@@ -109,7 +109,7 @@ const PopularDestinationsContainer = styled.div`
     .box .big_item,
     .box .small_items .row .item {
       max-width: 100%;
-      height: 300px;
+      height: 250px;
       width: 100%;
     }
   }
