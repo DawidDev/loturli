@@ -7,6 +7,8 @@ import Incentive from "../Components/Incentive";
 import Search from "../Components/Search";
 import GuideBar from "../Components/GuideBar";
 import Recommended from "../Components/Recommended";
+import PopularDestinations from "../Components/PopularDestinations";
+
 
 const HomeContainer = styled.div`
   //border: 1px solid red;
@@ -31,7 +33,9 @@ const Home = () => {
       <GuideBar />
       <TitleSection title={'Loturli poleca'} />
       <Recommended />
+      <TitleSection title={'Popularne kierunki podróży'} />
     </HomeContainer>
+    <PopularDestinations />
     </>
    
   );
