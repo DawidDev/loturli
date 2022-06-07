@@ -14,7 +14,7 @@ import Footer from "./Layouts/Footer";
 
 function App() {
   return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navigation />
         <Content />
       </Router>
