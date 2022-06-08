@@ -12,7 +12,7 @@ import NotFound from "../Pages/NotFound";
 
 const ContentContainer = styled.div`
   @media (max-width: 768px) {
-    //padding-top: 80px; // Height navbar when display is <= 768px
+    padding-top: 50px; // Height navbar when display is <= 768px
   }
 `
 

@@ -9,6 +9,7 @@ import GuideBar from "../Components/GuideBar";
 import Recommended from "../Components/Recommended";
 import PopularDestinations from "../Components/PopularDestinations";
 import BlogIncentive from "../Components/BlogIncentive";
+import NewsLetter from "../Components/NewsLetter";
 
 const HomeContainer = styled.div`
   //border: 1px solid red;
@@ -40,6 +41,7 @@ const Home = () => {
       <TitleSection title={'Sprawdź nasz blog'}></TitleSection>
       <BlogIncentive />
     </HomeContainer>
+    <NewsLetter />
     </>
    
   );

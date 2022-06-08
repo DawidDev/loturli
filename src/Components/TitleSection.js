@@ -7,6 +7,10 @@ const TitleSectionContainer = styled.div`
   letter-spacing: 2px;
   margin: 10px;
   color: #3C3C3C;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const TitleSection = ({ title }) => {

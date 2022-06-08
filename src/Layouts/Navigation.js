@@ -15,9 +15,10 @@ const NavigationStyled = styled.div`
   display: flex;
   align-items: center;
   color: #515151;
-  position: relative;
+  position: fixed;
   max-width: 1400px;
   margin: 0 auto;
+  z-index: 5;
 
   .logo {
     font-size: 44px;
@@ -78,15 +79,17 @@ const NavigationStyled = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: static;
     color: ${props => props.menuRWD ? '#fff' : 'black'};
     transition: 0.25s;
+    background-color: #fff;
+    height: 50px;
+    box-shadow: 0px 14px 16px -19px rgba(66, 68, 90, 1);
  
 
     .logo {
       width: auto;
       transition: 0.35s;
-      font-size: 50px;
+      font-size: 2rem;
       color: ${props => props.menuRWD ? '#fff' : '#426f74'};
     }
 
@@ -116,13 +119,13 @@ const NavigationStyled = styled.div`
     }
 
     .account {
-      right: 15%;
-      font-size: 35px;
+      right: 17%;
+      font-size: 1.8rem
     }
 
     .call {
       right: 25%;
-      font-size: 25px;
+      font-size: 1.5rem;
 
       p {
         display: none;
@@ -131,6 +134,7 @@ const NavigationStyled = styled.div`
 
     .menu_btn {
     display: block;
+    font-size: 2.2rem;
   }
   }
 `;

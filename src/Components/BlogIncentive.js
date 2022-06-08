@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const BlogIncentiveContainer = styled.div`
-  margin-bottom: 500px;
   display: flex;
   height: auto;
   align-items: center;

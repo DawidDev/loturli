@@ -53,13 +53,14 @@ const SearchContainer = styled.div`
 
     .box {
         width: 80%;
+        min-width: auto;
         height: auto;
         flex-wrap: wrap;
         background-color: transparent;
         margin: 20px 0;
 
         .item {
-            width: 80%;
+            width: 100%;
             background-color: #fff;
             margin-bottom: 10px;
             border-radius: 10px;
