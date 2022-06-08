@@ -15,8 +15,6 @@ const HomeContainer = styled.div`
   //border: 1px solid red;
   max-width: 1400px;
    margin: 0 auto;
-   max-width: 1400px;
-   margin: 0 auto;
    padding: 0 10px;
 
   @media (max-width: 768px) {

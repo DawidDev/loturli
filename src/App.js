@@ -17,6 +17,7 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Navigation />
         <Content />
+        <Footer />
       </Router>
   );
 }

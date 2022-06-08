@@ -5,7 +5,7 @@ import styled from "styled-components";
 const NewsLetterContainer = styled.div`
   background-color: #426F74;
   color: #fff;
-  margin: 40px 0;
+  margin-top: 40px;
   text-align: center;
   padding: 20px;
 

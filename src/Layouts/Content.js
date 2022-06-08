@@ -11,6 +11,8 @@ import LastMinute from "../Pages/LastMinute"
 import NotFound from "../Pages/NotFound";
 
 const ContentContainer = styled.div`
+  padding-top: 70px;
+
   @media (max-width: 768px) {
     padding-top: 50px; // Height navbar when display is <= 768px
   }

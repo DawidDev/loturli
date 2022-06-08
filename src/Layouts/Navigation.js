@@ -11,11 +11,14 @@ import {
 } from "react-router-dom";
 
 const NavigationStyled = styled.div`
+  background-color: #fff;
   width: 100%;
   display: flex;
   align-items: center;
   color: #515151;
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 1400px;
   margin: 0 auto;
   z-index: 5;
@@ -100,13 +103,14 @@ const NavigationStyled = styled.div`
       position: fixed;
       background-color: #426F74;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       transform: ${props => props.menuRWD ? 'translateX(0%)' : 'translateX(100%)'};
       transition: 0.25s;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+  
 
       li {
         margin: 2rem 0;
