@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 // Import additional components to display
-import TitleSection from "../Components/TitleSection"
-import Incentive from "../Components/Incentive";
-import Search from "../Components/Search";
-import GuideBar from "../Components/GuideBar";
-import Recommended from "../Components/Recommended";
-import PopularDestinations from "../Components/PopularDestinations";
-import BlogIncentive from "../Components/BlogIncentive";
-import NewsLetter from "../Components/NewsLetter";
+import TitleSection from "../Components//Home_page/TitleSection"
+import Incentive from "../Components/Home_page/Incentive";
+import Search from "../Components/Home_page/Search";
+import GuideBar from "../Components/Home_page/GuideBar";
+import Recommended from "../Components/Home_page/Recommended";
+import PopularDestinations from "../Components/Home_page/PopularDestinations";
+import BlogIncentive from "../Components/Home_page/BlogIncentive";
+import NewsLetter from "../Components/Home_page/NewsLetter";
 
 const HomeContainer = styled.div`
   //border: 1px solid red;

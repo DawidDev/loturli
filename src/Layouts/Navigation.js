@@ -22,6 +22,7 @@ const NavigationStyled = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   z-index: 5;
+  border-radius: 0 0 20px 20px;
 
   .logo {
     font-size: 44px;
