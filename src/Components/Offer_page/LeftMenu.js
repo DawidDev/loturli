@@ -5,10 +5,11 @@ import { Checkbox, FormControlLabel } from "@mui/material";
 
 const LeftMenuContainer = styled.div`
   width: 30%;
-  overflow: auto;
+  overflow: hidden;
+  padding-left: 3%;
 
   .rwd_box {
-    background-color: ${props => props.rwdFilters ? '#F5EDE6' : 'transparent'};
+    background-color: transparent;
     transition: 0.45s;
   }
 
@@ -20,13 +21,31 @@ const LeftMenuContainer = styled.div`
     display: none;
     width: 95%;
     font-size: 1.5rem;
-    border: none;
+    border: ${props => props.rwdFilters ? 'none' : '1px solid #3C3C3C'};
     border-radius: 10px;
     background-color: ${props => props.rwdFilters ? '#426F74' : '#fff'};
     color: ${props => props.rwdFilters ? '#fff' : '#3C3C3C'};
     padding: 10px 20px;
     margin-top: 20px;
     transition: 0.25s;
+  }
+
+  #filter_title {
+    margin: 20px 0 0 0;
+    color: #426F74;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .btn_filters_start {
+    background-color: #426F74;
+    border: none;
+    width: 70%;
+    height: 35px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 
   .inputs_box {
@@ -50,18 +69,24 @@ const LeftMenuContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 0;
+    padding-left: 0%;
     .rwd_btn {
       display: block;
     }
 
     .rwd_box {
+      background-color: ${props => props.rwdFilters ? '#E4E4E4' : 'transparent'};;
       padding-left: 30px;
       padding-top: 130px;
       padding-bottom: 30px;
       width: 100%;
       position: absolute;
-
       top: ${props => props.rwdFilters ? '0' : '-200%'};
+    }
+
+    #filter_title {
+      display: none;
     }
 
     h3 {
@@ -358,6 +383,7 @@ const LeftMenu = () => {
 
   return (
     <LeftMenuContainer rwdFilters = {oepnRwdFilters}>
+      <p id="filter_title">Filtrowanie</p>
       {filtersButton}
       <div className="rwd_box">
         <div className="inputs_box">
@@ -503,6 +529,7 @@ const LeftMenu = () => {
           )}
         </div>
       </div>
+      <button className="btn_filters_start">Zastosuj filtry</button>
     </LeftMenuContainer>
   );
 };
