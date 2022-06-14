@@ -96,6 +96,11 @@ const TripContainer = styled.div`
           margin: 10px 10px;
           width: 35px;
           font-size: 1rem;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
         }
 
         .book {
@@ -321,7 +326,7 @@ const Trip = () => {
     </div>
   ));
 
-  console.log(Atributes[0].iconClass);
+
 
   return (
     <>
@@ -359,7 +364,9 @@ const Trip = () => {
               <button onClick={handleBook.bind(this, "+")}>+</button>
               <p>{bookNumber}</p>
               <button onClick={handleBook.bind(this, "-")}>-</button>
-              <button className="book">Rezerwuj miejsca</button>
+              <button className="book">
+                <Link to={`/offer/reservation/${TripELement.id}/${bookNumber}`}>Rezerwuj miejsca</Link>
+              </button>
             </div>
           </div>
         </div>

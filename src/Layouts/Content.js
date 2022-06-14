@@ -11,6 +11,7 @@ import LastMinute from "../Pages/LastMinute"
 import NotFound from "../Pages/NotFound";
 
 import Trip from "../Components/ThisOfferPage/Trip";
+import Reservation from "../Components/Reservation/Reservation";
 
 const ContentContainer = styled.div`
   padding-top: 70px;
@@ -30,6 +31,7 @@ const Content = () => {
         <Route path="/" element={<Home />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/offer/:id" element={<Trip />} />
+        <Route path="/offer/reservation/:id/:numberBook" element={<Reservation />} />
         <Route path="/promotion" element={<Promotion />} />
         <Route path="/lastminute" element={<LastMinute />} />
         <Route path="*" element={<NotFound/>}/>
