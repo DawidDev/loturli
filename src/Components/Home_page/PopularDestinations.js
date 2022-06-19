@@ -2,6 +2,12 @@ import React from "react";
 
 import styled from "styled-components";
 
+import bulgary from "../../Images/popular_destinations/bulgary.jpg";
+import croatia from "../../Images/popular_destinations/croatia.jpeg";
+import grece from "../../Images/popular_destinations/grece.jpg";
+import spain from "../../Images/popular_destinations/spain.jpg";
+import turkey from "../../Images/popular_destinations/turkey.jpg";
+
 const PopularDestinationsContainer = styled.div`
   color: #3c3c3c;
   background-color: #e0efec;
@@ -118,51 +124,46 @@ const PopularDestinationsContainer = styled.div`
 const elementsTab = [
   {
     id: 1,
-    title: "Title",
+    title: "Bułgaria",
     price: "1299",
-    imgUrl:
-      "https://img5.goodfon.com/wallpaper/nbig/f/9c/pesok-more-volny-pliazh-leto-zakat-summer-beach-sea-sunset-3.jpg",
+    imgUrl: bulgary,
     imgAlt: "description of photo",
   },
   {
     id: 2,
-    title: "Title 2",
+    title: "Chorwacja",
     price: "1199",
-    imgUrl:
-      "https://img5.goodfon.com/wallpaper/nbig/f/9c/pesok-more-volny-pliazh-leto-zakat-summer-beach-sea-sunset-3.jpg",
+    imgUrl: croatia,
     imgAlt: "description of photo",
   },
   {
     id: 3,
-    title: "Title 3",
+    title: "Grecja",
     price: "1499",
-    imgUrl:
-      "https://img5.goodfon.com/wallpaper/nbig/f/9c/pesok-more-volny-pliazh-leto-zakat-summer-beach-sea-sunset-3.jpg",
+    imgUrl: grece,
     imgAlt: "description of photo",
   },
   {
     id: 4,
-    title: "Title 4",
+    title: "Hiszpania",
     price: "1599",
-    imgUrl:
-      "https://img5.goodfon.com/wallpaper/nbig/f/9c/pesok-more-volny-pliazh-leto-zakat-summer-beach-sea-sunset-3.jpg",
+    imgUrl: spain,
     imgAlt: "description of photo",
   },
   {
     id: 5,
-    title: "Title 5",
+    title: "Turcja",
     price: "1699",
-    imgUrl:
-      "https://img5.goodfon.com/wallpaper/nbig/f/9c/pesok-more-volny-pliazh-leto-zakat-summer-beach-sea-sunset-3.jpg",
+    imgUrl: turkey,
     imgAlt: "description of photo",
   },
 ];
 
-// A function that handles the rendering of content in mesh objects of this component 
+// A function that handles the rendering of content in mesh objects of this component
 const PopularDestinations = () => {
   const element = (title, price, imgUrl, imgAlt) => (
     <>
-      <img src={imgUrl} alt={imgAlt}/>
+      <img src={imgUrl} alt={imgAlt} />
       <div id="information">
         <span className="title">{title}</span>
         <span className="price">od {price} zł/os</span>
@@ -171,19 +172,42 @@ const PopularDestinations = () => {
   );
 
   const elementsToDisplay = [
-    element(elementsTab[0].title, elementsTab[0].price, elementsTab[0].imgUrl, elementsTab[0].imgAlt),
-    element(elementsTab[1].title, elementsTab[1].price, elementsTab[1].imgUrl, elementsTab[1].imgAlt),
-    element(elementsTab[2].title, elementsTab[2].price, elementsTab[2].imgUrl, elementsTab[2].imgAlt),
-    element(elementsTab[3].title, elementsTab[3].price, elementsTab[3].imgUrl, elementsTab[3].imgAlt),
-    element(elementsTab[4].title, elementsTab[4].price, elementsTab[4].imgUrl, elementsTab[4].imgAlt),
-  ]
+    element(
+      elementsTab[0].title,
+      elementsTab[0].price,
+      elementsTab[0].imgUrl,
+      elementsTab[0].imgAlt
+    ),
+    element(
+      elementsTab[1].title,
+      elementsTab[1].price,
+      elementsTab[1].imgUrl,
+      elementsTab[1].imgAlt
+    ),
+    element(
+      elementsTab[2].title,
+      elementsTab[2].price,
+      elementsTab[2].imgUrl,
+      elementsTab[2].imgAlt
+    ),
+    element(
+      elementsTab[3].title,
+      elementsTab[3].price,
+      elementsTab[3].imgUrl,
+      elementsTab[3].imgAlt
+    ),
+    element(
+      elementsTab[4].title,
+      elementsTab[4].price,
+      elementsTab[4].imgUrl,
+      elementsTab[4].imgAlt
+    ),
+  ];
 
   return (
     <PopularDestinationsContainer>
       <div className="box">
-        <div className="big_item">
-          {elementsToDisplay[0]}
-        </div>
+        <div className="big_item">{elementsToDisplay[0]}</div>
         <div className="small_items">
           <div className="row">
             <div className="item">{elementsToDisplay[1]}</div>

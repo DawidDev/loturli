@@ -150,7 +150,7 @@ const OffersList = () => {
     return (
       <div className="offer_item" id={item.id}>
         <div className="image">
-            <img src="https://i.wakacje.pl/no-index/hotel/turcja/justiniano-club-park-conti-basen-aquapark-zjezdzalnia-plaza-825726288-1200-800.jpg" alt="img-test"/>
+            <img src={item.img} alt="img-test"/>
         </div>
         <div className="information">
           <div className="location">

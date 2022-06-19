@@ -2,13 +2,24 @@ import React from "react";
 
 import styled from "styled-components";
 
+import img1 from  "../../Images/img1.jpg"
+
 const SearchContainer = styled.div`
   width: 100%;
   height: 350px;
-  background-color: silver;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+ 
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
   .box {
     width: 95%;
@@ -19,6 +30,7 @@ const SearchContainer = styled.div`
     justify-content: space-around;
     border-radius: 10px;
     background-color: #fff;
+    position: relative;
 
     .item {
       width: 20%;
@@ -47,6 +59,17 @@ const SearchContainer = styled.div`
       }
     }
   }
+  button {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(130%);
+    background-color: #426F74;
+    color: #f1f1f1;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+  }
 
   @media (max-width: 768px) {
     height: auto;
@@ -58,6 +81,7 @@ const SearchContainer = styled.div`
         flex-wrap: wrap;
         background-color: transparent;
         margin: 20px 0;
+        padding-bottom: 50px;
 
         .item {
             width: 100%;
@@ -74,6 +98,13 @@ const SearchContainer = styled.div`
             input {
                 font-size: 20px;
             }
+        }
+
+        button {
+          transform: translateY(0);
+          width: 80%;
+          height: 40px;
+          font-size: 24px;
         }
     }
 
@@ -97,7 +128,9 @@ const Search = () => {
        <Item title={'Kiedy?'} typeInput={'date'}/>
        <Item title={'Ile osób?'} typeInput={'number'}/>
        <Item title={'Skąd wyjazd?'} typeInput={'text'} />
+       <button>Szukaj</button>
       </div>
+      <img src={img1} />
     </SearchContainer>
   );
 };

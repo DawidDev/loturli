@@ -40,6 +40,12 @@ const TripContainer = styled.div`
       background-color: silver;
       flex: 2;
       margin-right: 20px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .information {
@@ -315,7 +321,7 @@ const Trip = () => {
 
   const galleryRender = TripELement.imagesGallery.map((item) => (
     <div className="item">
-      <img src={item} alt={TripELement.nation} />
+      <img src={Elements[id-1].img} alt={TripELement.nation} />
     </div>
   ));
 
@@ -340,7 +346,9 @@ const Trip = () => {
           Powrót do listy ofert
         </Link>
         <div className="demo_section">
-          <div className="slider"></div>
+          <div className="slider">
+            <img src={Elements[id-1].img} />
+          </div>
           <div className="information">
             <h2>{TripELement.nameOfObject}</h2>
             <p className="rate">Nasza ocena: {TripELement.ourRate}/10</p>

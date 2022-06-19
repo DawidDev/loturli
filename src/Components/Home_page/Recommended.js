@@ -13,6 +13,12 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+import hotel1 from "../../Images/hotel1.webp";
+import hotel2 from "../../Images/hotel2.webp";
+import hotel3 from "../../Images/hotel3.webp";
+import hotel4 from "../../Images/hotel4.webp";
+import hotel5 from "../../Images/hotel5.webp";
+
 const RecommendedContainer = styled.div`
   margin: 10px;
   color: #3c3c3c;
@@ -22,11 +28,18 @@ const RecommendedContainer = styled.div`
     height: 400px;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
 
     .photo_box {
       width: 100%;
       height: 65%;
       background-color: silver;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     p {
@@ -43,15 +56,15 @@ const RecommendedContainer = styled.div`
     }
 
     #price {
-        color: #426F74;
-        position: absolute;
-        bottom: 5%;
-        right: 0;
-        font-size: 2.5rem;
+      color: #426f74;
+      position: absolute;
+      bottom: 5%;
+      right: 0;
+      font-size: 2.5rem;
 
-        span {
-            font-size: 1.25rem;
-        }
+      span {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -81,7 +94,7 @@ const dataToDisplay = [
     region: "Zakynthos",
     ourRate: 8,
     price: 2999,
-    urlPhoto: "",
+    urlPhoto: hotel1,
   },
   {
     title: "Hotel Nazwa 2",
@@ -89,7 +102,7 @@ const dataToDisplay = [
     region: "Zakynthos",
     ourRate: 5,
     price: 2999,
-    urlPhoto: "",
+    urlPhoto: hotel2,
   },
   {
     title: "Hotel Nazwa 3",
@@ -97,7 +110,7 @@ const dataToDisplay = [
     region: "Zakynthos",
     ourRate: 4,
     price: 2999,
-    urlPhoto: "",
+    urlPhoto: hotel3,
   },
   {
     title: "Hotel Nazwa 4",
@@ -105,7 +118,7 @@ const dataToDisplay = [
     region: "Zakynthos",
     ourRate: 2,
     price: 2999,
-    urlPhoto: "",
+    urlPhoto: hotel4,
   },
 ];
 
@@ -114,13 +127,17 @@ const Recommended = () => {
     return (
       <SwiperSlide key={item.title}>
         <div className="box">
-          <div className="photo_box"></div>
+          <div className="photo_box">
+            <img src={item.urlPhoto} />
+          </div>
           <p id="title">{item.title}</p>
           <p id="location">
             {item.nation}, {item.region}
           </p>
           <p id="stars">{item.ourRate}/10</p>
-          <p id="price">{item.price} zł<span>/os</span></p>
+          <p id="price">
+            {item.price} zł<span>/os</span>
+          </p>
         </div>
       </SwiperSlide>
     );
