@@ -1,15 +1,25 @@
 {
   "files": {
     "main.css": "/loturli/static/css/main.4e04ec64.css",
-    "main.js": "/loturli/static/js/main.361fc05d.js",
+    "main.js": "/loturli/static/js/main.ecab640b.js",
+    "static/media/bulgary.jpg": "/loturli/static/media/bulgary.e1caed83ef9641352943.jpg",
     "static/media/img1.jpg": "/loturli/static/media/img1.bd907e5b0a880eadb952.jpg",
     "static/media/woman.jpg": "/loturli/static/media/woman.09e65bc15fa5a863a801.jpg",
+    "static/media/hotel4.webp": "/loturli/static/media/hotel4.02680c2e7d77fe92b6e4.webp",
+    "static/media/croatia.jpeg": "/loturli/static/media/croatia.19c5468e8118834c4b32.jpeg",
+    "static/media/hotel2.webp": "/loturli/static/media/hotel2.8257e4a1dceadd0b50d4.webp",
+    "static/media/hotel5.webp": "/loturli/static/media/hotel5.4ac15ea2c976ff1ccd15.webp",
+    "static/media/hotel3.webp": "/loturli/static/media/hotel3.bab7c7cada7cc1390df7.webp",
+    "static/media/hotel1.webp": "/loturli/static/media/hotel1.c35d34637ba5a3180697.webp",
+    "static/media/grece.jpg": "/loturli/static/media/grece.7b66c8bb1d23d29a8df4.jpg",
+    "static/media/turkey.jpg": "/loturli/static/media/turkey.5d8a4229f6b6091a0bf7.jpg",
+    "static/media/spain.jpg": "/loturli/static/media/spain.55121315b2fe00d8ffc8.jpg",
     "index.html": "/loturli/index.html",
     "main.4e04ec64.css.map": "/loturli/static/css/main.4e04ec64.css.map",
-    "main.361fc05d.js.map": "/loturli/static/js/main.361fc05d.js.map"
+    "main.ecab640b.js.map": "/loturli/static/js/main.ecab640b.js.map"
   },
   "entrypoints": [
     "static/css/main.4e04ec64.css",
-    "static/js/main.361fc05d.js"
+    "static/js/main.ecab640b.js"
   ]
 }
