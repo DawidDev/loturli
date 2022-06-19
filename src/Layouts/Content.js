@@ -10,6 +10,8 @@ import Promotion from "../Pages/Promotion";
 import LastMinute from "../Pages/LastMinute"
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import HomeAdmin from "../Pages/admin/HomeAdmin";
+import EditOffer from "../Pages/admin/EditOffer";
 import NotFound from "../Pages/NotFound";
 
 import Trip from "../Components/ThisOfferPage/Trip";
@@ -38,6 +40,8 @@ const Content = () => {
         <Route path="/lastminute" element={<LastMinute />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/admin" element={<HomeAdmin />} />
+        <Route path="/admin/offer/:id" element={<EditOffer />} />
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       </ContentContainer>
