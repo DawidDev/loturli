@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/loturli/static/css/main.4e04ec64.css",
-    "main.js": "/loturli/static/js/main.3d9e664f.js",
+    "main.js": "/loturli/static/js/main.c6a7843a.js",
     "index.html": "/loturli/index.html",
     "main.4e04ec64.css.map": "/loturli/static/css/main.4e04ec64.css.map",
-    "main.3d9e664f.js.map": "/loturli/static/js/main.3d9e664f.js.map"
+    "main.c6a7843a.js.map": "/loturli/static/js/main.c6a7843a.js.map"
   },
   "entrypoints": [
     "static/css/main.4e04ec64.css",
-    "static/js/main.3d9e664f.js"
+    "static/js/main.c6a7843a.js"
   ]
 }
