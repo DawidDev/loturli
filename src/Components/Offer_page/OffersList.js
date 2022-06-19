@@ -21,6 +21,7 @@ const OffersListContainer = styled.div`
     position: relative;
     height: 250px;
 
+
     .image {
       height: 100%;
       width: 250px;
@@ -97,7 +98,6 @@ const OffersListContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    z-index: -1;
     padding-top: 80px;
 
     .offer_item {

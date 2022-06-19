@@ -7,10 +7,13 @@ const LeftMenuContainer = styled.div`
   width: 30%;
   overflow: hidden;
   padding-left: 3%;
+  position: relative;
+
 
   .rwd_box {
     background-color: transparent;
     transition: 0.45s;
+    z-index: 4;
   }
 
   .rwd_btn {
@@ -71,6 +74,7 @@ const LeftMenuContainer = styled.div`
   @media (max-width: 768px) {
     width: 0;
     padding-left: 0%;
+
     .rwd_btn {
       display: block;
     }
@@ -82,6 +86,7 @@ const LeftMenuContainer = styled.div`
       padding-bottom: 30px;
       width: 100%;
       position: absolute;
+      z-index: 2;
       top: ${props => props.rwdFilters ? '0' : '-200%'};
     }
 

@@ -8,6 +8,8 @@ import Home from "../Pages/Home";
 import Offer from "../Pages/Offer";
 import Promotion from "../Pages/Promotion";
 import LastMinute from "../Pages/LastMinute"
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 import NotFound from "../Pages/NotFound";
 
 import Trip from "../Components/ThisOfferPage/Trip";
@@ -28,12 +30,14 @@ const Content = () => {
   return (
     <ContentContainer>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/offer/:id" element={<Trip />} />
         <Route path="/offer/reservation/:id/:numberBook" element={<Reservation />} />
         <Route path="/promotion" element={<Promotion />} />
         <Route path="/lastminute" element={<LastMinute />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       </ContentContainer>

@@ -59,12 +59,18 @@ const NavigationStyled = styled.div`
     font-size: 25px;
   }
 
+  a i {
+    transition: 0.25s;
+    color: ${props => props.menuRWD ? '#fff' : '#426F74'};;
+  }
+
   .call {
     padding: 0 10px;
     position: absolute;
     right: 10%;
     display: flex;
     align-items: center;
+    color: #426F74;
 
     i {
       margin-right: 10px;
@@ -150,30 +156,31 @@ const Navigation = () => {
   const [showMenuRwd, setShowMenuRwd] = useState(false);
   const handleRWDMenu = () => setShowMenuRwd(prevValue => !prevValue)
   console.log(showMenuRwd)
-
+  const closeMenu = () => setShowMenuRwd(false)
 
   return (
     <NavigationStyled menuRWD = {showMenuRwd}>
       <div className="logo">LOTURLI</div>
       <ul className="nav">
         <li>
-          <NavLink to="/" onClick={handleRWDMenu} >HOME</NavLink>
+          <NavLink to="/" onClick={handleRWDMenu} >Strona główna</NavLink>
         </li>
         <li>
-          <NavLink to="/offer" onClick={handleRWDMenu} >OFFER</NavLink>
+          <NavLink to="/offer" onClick={handleRWDMenu} >Oferty</NavLink>
         </li>
         <li>
-          <NavLink to="/promotion" onClick={handleRWDMenu} >PROMOTION</NavLink>
+          <NavLink to="/promotion" onClick={handleRWDMenu} >Promocje</NavLink>
         </li>
         <li>
-          <NavLink to="/lastminute" onClick={handleRWDMenu} >LASTMINUTE</NavLink>
+          <NavLink to="/lastminute" onClick={handleRWDMenu} >Last minute</NavLink>
         </li>
       </ul>
       <div className="call">
         <i className="bi bi-telephone"></i><p>665 665 665</p>
       </div>
       <div className="account">
-        <i className="bi bi-person"></i>
+        <NavLink to="/login"onClick={closeMenu} ><i className="bi bi-person"></i></NavLink>
+        
       </div>
       <i onClick={handleRWDMenu} className="menu_btn bi bi-list"></i>
     </NavigationStyled>
