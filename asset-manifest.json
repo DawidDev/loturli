@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/loturli/static/css/main.4e04ec64.css",
-    "main.js": "/loturli/static/js/main.ecab640b.js",
+    "main.js": "/loturli/static/js/main.ba23fc35.js",
     "static/media/bulgary.jpg": "/loturli/static/media/bulgary.e1caed83ef9641352943.jpg",
     "static/media/img1.jpg": "/loturli/static/media/img1.bd907e5b0a880eadb952.jpg",
     "static/media/woman.jpg": "/loturli/static/media/woman.09e65bc15fa5a863a801.jpg",
@@ -16,10 +16,10 @@
     "static/media/spain.jpg": "/loturli/static/media/spain.55121315b2fe00d8ffc8.jpg",
     "index.html": "/loturli/index.html",
     "main.4e04ec64.css.map": "/loturli/static/css/main.4e04ec64.css.map",
-    "main.ecab640b.js.map": "/loturli/static/js/main.ecab640b.js.map"
+    "main.ba23fc35.js.map": "/loturli/static/js/main.ba23fc35.js.map"
   },
   "entrypoints": [
     "static/css/main.4e04ec64.css",
-    "static/js/main.ecab640b.js"
+    "static/js/main.ba23fc35.js"
   ]
 }
